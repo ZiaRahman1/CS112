@@ -3,9 +3,8 @@ public class HelloWorld {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Hello World! from Santa Ana College");
 		
-		String text = "Hello World!";
+		String text = "Hello World! from Santa Ana";
         System.out.println("Hello");
         System.out.println("My name is Zia Rahman");
 
