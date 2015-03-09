@@ -28,9 +28,6 @@ public class RockPaperScissor {
 		 * 2-Scissor beats paper
 		 * 3-Paper beats Rock
 		 */
-//		while(true){
-//			
-//		}
 		System.out.println("1 stands for Rock.");
 		System.out.println("2 stands for Scissor.");
 		System.out.println("3 stands for Paper.");
