@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class GuessANumber {
 
 	public static void main(String[] args)
@@ -9,10 +8,10 @@ public class GuessANumber {
 		
 		int number, random;
 		
-		random = 1 + (int) (Math.random() * 10);
+		random = 0 + (int) (Math.random() * 10);
 		System.out.printf("Random number is %d\n.",random);
 		
-		System.out.println("Please enter a number between 1 -- 10.");
+		System.out.print("Please enter a number between 1 -- 10.");
 		number = read.nextInt();
 		
 		if (random == number )
