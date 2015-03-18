@@ -9,12 +9,15 @@ public class GuessANumber_V2 {
 		int programCounter = 0;
 		int correctGuess = 0;
 		int wrongGuess = 0;
+		float successRate=0;
+		float failureRate=0;
 
 		System.out.printf("Please enter a number between 1 -- 10, OR -1 to EXIT");
 		number = read.nextInt();
 
 		while (number != -1) {
 			random = 0 + (int) (Math.random() * 10);
+			System.out.println(random);
 			if (random == number) {
 				System.out.println("Numbers are same");
 				correctGuess += 1;
@@ -29,8 +32,12 @@ public class GuessANumber_V2 {
 			System.out.print("\nPlease enter a number between 0 -- 10. -- OR enter -1 to exit");
 			number = read.nextInt();
 		}
-
+		successRate = correctGuess/programCounter;
+		failureRate = (wrongGuess/programCounter)*100;
+		System.out.println(successRate);
+		System.out.println(failureRate);
 		System.out.printf("\nTotal run = %d, Total Success = %d, Total Failure = %d\n",programCounter, correctGuess, wrongGuess);
+		System.out.printf("\nSuccess rate = %f and failure rate = %f ",successRate, failureRate);
 		System.out.println("Good Bye.");
 	}
 }
