@@ -12,6 +12,7 @@ public class ForLoop {
 	
 		for(int i=1; i<4;i++)
 		{
+			
 			System.out.printf("Counter is %d\n",i);
 			System.out.printf("Please enter a number between 1 -- 10");
 			number = read.nextInt();
