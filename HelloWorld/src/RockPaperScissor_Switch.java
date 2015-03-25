@@ -24,7 +24,8 @@ public class RockPaperScissor_Switch {
 			default:
 				computer = "Paper";
 			}
-			JOptionPane.showMessageDialog(null, computer);
+			//JOptionPane.showMessageDialog(null, computer);
+			JOptionPane.showMessageDialog(null, computer, "Computer Value", 1);
 			player_1 = JOptionPane.showInputDialog("Please enter your choice: Rock, scissor,or paper.");
 
 			switch (player_1.toLowerCase()) {
@@ -47,7 +48,7 @@ public class RockPaperScissor_Switch {
 					JOptionPane.showMessageDialog(null, "Computer win");
 					break;
 				case "paper":
-					JOptionPane.showMessageDialog(null, "player win");
+					JOptionPane.showMessageDialog(null, "Player win");
 					break;
 				case "scissor":
 					JOptionPane.showMessageDialog(null, "Tie");
@@ -57,7 +58,7 @@ public class RockPaperScissor_Switch {
 			case "paper":
 				switch (computer.toLowerCase()) {
 				case "rock":
-					JOptionPane.showMessageDialog(null, "player win");
+					JOptionPane.showMessageDialog(null, "Player win");
 					break;
 				case "paper":
 					JOptionPane.showMessageDialog(null, "Tie");
