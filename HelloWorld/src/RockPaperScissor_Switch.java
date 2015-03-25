@@ -1,16 +1,16 @@
-import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 public class RockPaperScissor_Switch {
 
 	public static void main(String[] args)
 	{
-		Scanner read = new Scanner(System.in);
+
 		String player_1;
 		int random;
+		String input = "";
 		String computer = "";
 
-		boolean stop = true;
 		do {
 
 			random = 1 + (int) (Math.random() * 3);
@@ -71,7 +71,9 @@ public class RockPaperScissor_Switch {
 				break;
 			}
 
-		
-		} while (true);
+			 input = JOptionPane.showInputDialog("Do you want to play again?.");
+        }while(input.equalsIgnoreCase("yes") ||input.equalsIgnoreCase("y") );
+       
+        JOptionPane.showMessageDialog(null, "Good Bye");
 	}
 }
