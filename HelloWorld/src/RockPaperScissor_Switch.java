@@ -12,7 +12,6 @@ public class RockPaperScissor_Switch {
 		String computer = "";
 
 		do {
-
 			random = 1 + (int) (Math.random() * 3);
 			switch (random) {
 			case 1:
@@ -24,8 +23,8 @@ public class RockPaperScissor_Switch {
 			default:
 				computer = "Paper";
 			}
-			//JOptionPane.showMessageDialog(null, computer);
-			JOptionPane.showMessageDialog(null, computer, "Computer Value", 1);
+			// Printing the computer value for debug
+			//JOptionPane.showMessageDialog(null, computer, "Computer Value", 1);
 			player_1 = JOptionPane.showInputDialog("Please enter your choice: Rock, scissor,or paper.");
 
 			switch (player_1.toLowerCase()) {
@@ -72,7 +71,7 @@ public class RockPaperScissor_Switch {
 			}
 
 			 input = JOptionPane.showInputDialog("Do you want to play again?.");
-        }while(input.equalsIgnoreCase("yes") ||input.equalsIgnoreCase("y") );
+        } while(input.equalsIgnoreCase("yes") ||input.equalsIgnoreCase("y") );
        
         JOptionPane.showMessageDialog(null, "Good Bye");
 	}
