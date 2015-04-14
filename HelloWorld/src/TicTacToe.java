@@ -44,7 +44,9 @@ public class TicTacToe {
 						|| (game[1] == "X" && game[4] == "X" && game[7] == "X")
 						|| (game[2] == "X" && game[5] == "X" && game[8] == "X")
 						|| (game[0] == "X" && game[4] == "X" && game[8] == "X")
-						|| (game[2] == "X" && game[5] == "X" && game[8] == "X")) {
+						|| (game[2] == "X" && game[5] == "X" && game[8] == "X")
+						|| (game[0] == "X" && game[4] == "X" && game[8] == "X")
+						|| (game[2] == "X" && game[4] == "X" && game[6] == "X")) {
 					//JOptionPane.showMessageDialog(null, "You Won");
 					winner = "You won!";
 					win = true;
@@ -67,7 +69,9 @@ public class TicTacToe {
 							|| (game[1] == "\u2713" && game[4] == "\u2713" && game[7] == "\u2713")
 							|| (game[2] == "\u2713" && game[5] == "\u2713" && game[8] == "\u2713")
 							|| (game[0] == "\u2713" && game[4] == "\u2713" && game[8] == "\u2713")
-							|| (game[2] == "\u2713" && game[5] == "\u2713" && game[8] == "\u2713")) {
+							|| (game[2] == "\u2713" && game[5] == "\u2713" && game[8] == "\u2713")
+							|| (game[0] == "\u2713" && game[4] == "\u2713" && game[8] == "\u2713")
+							|| (game[2] == "\u2713" && game[4] == "\u2713" && game[6] == "\u2713")) {
 						//JOptionPane.showMessageDialog(null, "Computer Won");
 					 winner = "Computer won!";
 						win = true;
