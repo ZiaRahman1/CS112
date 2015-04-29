@@ -3,7 +3,6 @@ public class Dice {
 
 	private int numberDice;
 	private int number;
-	private int [] bounceValues = new int[10];
 	private boolean flag = false;
 	
 	public Dice(){}
