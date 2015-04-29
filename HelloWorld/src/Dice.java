@@ -3,6 +3,7 @@ public class Dice {
 
 	private int numberDice;
 	private int number;
+	private int average;
 	private boolean flag = false;
 	
 	public Dice(){}
@@ -20,7 +21,7 @@ public class Dice {
 		}
 	}
 	
-	public void Throw (int bounce)
+	public int Throw (int bounce)
 	{
 		int [] bounceValues = new int[bounce];
 		int avg = 0;
@@ -31,7 +32,8 @@ public class Dice {
 			System.out.println(bounceValues[i]);
 		}
 		System.out.println("The average is :");
-		System.out.println(avg/bounce);
+		 average = ((avg)/bounce );
+		return average;
 	}
 	
 
