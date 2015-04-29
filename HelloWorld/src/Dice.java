@@ -4,14 +4,18 @@ public class Dice {
 	private int numberDice;
 	private int number;
 	private int average;
+	private int bounce;
 	private boolean flag = false;
 	
-	public Dice(){}
-	
-	public Dice(int numberDice)
+	public Dice(int bounce)
 	{
-		this.numberDice = numberDice;
+		this.bounce = bounce;
 	}
+	
+//	public Dice(int numberDice)
+//	{
+//		this.numberDice = numberDice;
+//	}
 	
 	public void rollDice()
 	{
@@ -19,6 +23,21 @@ public class Dice {
 		{
 			this.number += 1 + (int)(Math.random() * 6);
 		}
+	}
+	
+	public int Throw ()
+	{
+		int [] bounceValues = new int[bounce];
+		int avg = 0;
+		for (int i=0; i<bounce; i++)
+		{
+			bounceValues[i] = 1 + (int)(Math.random() * 6);
+			avg = avg + bounceValues[i];
+			System.out.println(bounceValues[i]);
+		}
+		System.out.println("The average is :");
+		 average = ((avg)/bounce );
+		return average;
 	}
 	
 	public int Throw (int bounce)
