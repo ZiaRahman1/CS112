@@ -9,7 +9,7 @@ public class Dices {
 	// constructor to set number of dices to play
 	public Dices(int dice)
 	{
-		numOfDice = dice;
+		this.numOfDice = dice;
 	}
 	
 	// Rolls the dices for dice values
