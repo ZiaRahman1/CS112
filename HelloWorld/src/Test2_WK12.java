@@ -23,15 +23,15 @@ public class Test2_WK12 {
 			if (input.equalsIgnoreCase("high"))
 			{
 				dice.highGuess();
-				JOptionPane.showMessageDialog(null,"Points are " + dice.points() + ", actual dice value " + dice.diceValue());
+				//JOptionPane.showMessageDialog(null,"Points are " + dice.points() + ", actual dice value " + dice.diceValue());
 			}else if (input.equalsIgnoreCase("low"))
 			{
 				dice.lowGuess();
-				JOptionPane.showMessageDialog(null,"Points are " + dice.points()+ ", actual dice value " + dice.diceValue());
+				//JOptionPane.showMessageDialog(null,"Points are " + dice.points()+ ", actual dice value " + dice.diceValue());
 			}else
 			{
 				dice.middleGuess(Integer.parseInt(input)); 
-				JOptionPane.showMessageDialog(null,"Points are " + dice.points()+ ", actual dice value " + dice.diceValue());
+				//JOptionPane.showMessageDialog(null,"Points are " + dice.points()+ ", actual dice value " + dice.diceValue());
 			}
 					
 			// Ask user if they want to play again
