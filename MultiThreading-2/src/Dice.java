@@ -99,6 +99,6 @@ public class Dice implements Runnable{
 	
 	public void print()
 	{
-		System.out.println("Number of dice: " + this.numOfDice + " Thread name: " + Thread.currentThread().getName() + " Dice Value: " + diceValue()+ "\n");
+		System.out.println("Number of dice: " + this.numOfDice + ", Thread name: " + Thread.currentThread().getName() + ", Dice Value: " + diceValue()+ "\n");
 	}
 }
