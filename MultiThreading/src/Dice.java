@@ -99,6 +99,6 @@ public class Dice implements Runnable{
 	
 	public void print()
 	{
-		System.out.println("Number of Games:" + numberOfGames() + "Dice Value:" + diceValue());
+		System.out.println("Number of dice: " + this.numOfDice + " Dice Value: " + diceValue()+ "\n");
 	}
 }
